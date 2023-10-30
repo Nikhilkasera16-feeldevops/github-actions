@@ -29,4 +29,6 @@ jobs:
                         run: |
                           docker build -t my-python-app .
                           docker tag my-python-app nikhilkasera161997/my-python-app
+                          docker push nikhilkasera161997/my-python-app
+
                           
