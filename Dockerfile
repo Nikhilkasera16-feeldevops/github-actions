@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # port open
 EXPOSE 5000
 #container trigger
-CMD ["python","script.py"]
+
