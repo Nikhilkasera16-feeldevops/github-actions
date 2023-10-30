@@ -29,8 +29,4 @@ jobs:
                         run: |
                           docker build -t my-python-app .
                           docker tag my-python-app nikhilkasera161997/my-python-app
-                          echo ${{ secrets.DOCKERHUB_USERNAME }} | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin 
-                          docker push nikhilkasera161997/my-python-app
-                        env:
-                          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-                          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+                          
